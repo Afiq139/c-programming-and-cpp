@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
 
 int main()
 {
@@ -84,9 +86,21 @@ int main()
     printf("%f \n", 5 / 4.0);
 
     int num = 6;
-    printf("%d \n",num);
+    printf("%d\n",num);
+    printf("2 Power of 3 is %0.1f\n", pow(2, 3)); /* 2^3 */
+    printf("4 Power of 3 is %0.1f\n", pow(4, 3)); /* 4^3 */
+    printf("square root of 36 is %0.1f\n", sqrt(36)); /* square root of 36 */
+    printf("Ceiling of 36.356 is %0.1f\n", ceil(36.356)); /* ceiling of 36.356 - round up*/
+    printf("Floor of 36.356 is %0.1f\n", floor(36.356)); /* cfloor of 36.356 - round down*/
 
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Comments - 52.21\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
 
+    printf("Comments are fun");
 
 
 
