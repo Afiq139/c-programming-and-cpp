@@ -57,8 +57,9 @@ int main()
     printf("Printf - 38.32\n");
     printf("----------------------------------- \n");
     printf(" \n");
-    printf("Hello\nWorld");
-    printf("Hello\"World");
+    printf("Hello\nWorld\n");
+    printf("Hello\"World\n");
+    printf("%d\n", 500);
 
     printf(" \n");
     printf(" \n");
