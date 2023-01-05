@@ -100,8 +100,42 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
+    /* this print out text*/
     printf("Comments are fun");
 
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Constants - 56.02\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+    const int FAV_NUM1 = 5;
+    printf("%d\n", FAV_NUM1);
+    printf(" \n");
+    int num1 = 8;
+    printf("%d\n", num1);
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Getting User Input - 1.00.00\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+    int ageInput;
+    printf("Enter your age: ");
+    scanf("%d", &ageInput);
+    printf("You are %d years old", ageInput);
+    printf(" \n");
+    printf(" \n");
+
+    double gpaInput;
+    printf("Enter your gpa: ");
+    scanf("%lf", &gpaInput);
+    printf("Your gpa is %0.2f", gpaInput);
 
 
     printf(" \n");
