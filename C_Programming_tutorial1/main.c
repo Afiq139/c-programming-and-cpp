@@ -125,6 +125,13 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
+    char nameStudent1[20];
+    printf("Enter your name: ");
+    fgets(nameStudent1, 20, stdin);
+    printf("Your name is %s", nameStudent1);
+    printf(" \n");
+    printf(" \n");
+
     int ageInput;
     printf("Enter your age: ");
     scanf("%d", &ageInput);
@@ -139,6 +146,14 @@ int main()
     printf(" \n");
     printf(" \n");
 
+    /*
+    char nameStudent[20];
+    printf("Enter your name: ");
+    scanf("%s", nameStudent);
+    printf("Your name is %s", nameStudent);
+    printf(" \n");
+    printf(" \n");
+
     char grade1;
     printf("Enter your Grade: ");
     scanf("%c", &grade1);
@@ -146,6 +161,7 @@ int main()
     printf(" \n");
     printf(" \n");
 
+    */
 
     printf(" \n");
     printf(" \n");
