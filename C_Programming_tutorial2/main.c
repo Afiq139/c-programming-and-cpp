@@ -26,12 +26,37 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
-    printf("Roses are red\n");
-    printf("Violets are blue\n");
-    printf("I love you\n");
+    char color[20];
+    char pluralNoun[20];
+    char celebrityF[20];
+    char celebrityL[20];
+
+    printf("Enter a color: ");
+    scanf("%s", color);
+    printf("Enter a plural-noun: ");
+    scanf("%s", pluralNoun);
+    printf("Enter a celebrity: ");
+    scanf("%s%s", celebrityF, celebrityL);
+
+    printf(" \n");
+    printf("Roses are %s\n", color);
+    printf(" \n");
+    printf("%s are blue\n", pluralNoun);
+    printf(" \n");
+    printf("I love %s %s\n", celebrityF, celebrityL);
 
 
     printf(" \n");
     printf(" \n");
+    printf("----------------------------------- \n");
+    printf("arrays - 1.26.31\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+
+
+    printf(" \n");
+    printf(" \n");
+
     return 0;
 }
