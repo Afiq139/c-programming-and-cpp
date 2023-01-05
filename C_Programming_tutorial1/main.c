@@ -136,6 +136,15 @@ int main()
     printf("Enter your gpa: ");
     scanf("%lf", &gpaInput);
     printf("Your gpa is %0.2f", gpaInput);
+    printf(" \n");
+    printf(" \n");
+
+    char grade1;
+    printf("Enter your Grade: ");
+    scanf("%c", &grade1);
+    printf("Your grade is %c", grade1);
+    printf(" \n");
+    printf(" \n");
 
 
     printf(" \n");
