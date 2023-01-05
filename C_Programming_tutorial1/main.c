@@ -57,12 +57,29 @@ int main()
     printf("Printf - 38.32\n");
     printf("----------------------------------- \n");
     printf(" \n");
+
     printf("Hello\nWorld\n");
     printf("Hello\"World\n");
     printf("%d\n", 500);
     printf("My favorite number is %d\n", 500);
     printf("My favorite %s is %d\n","number", 500);
     printf("My favorite %s is %f\n","number", 500.23128);
+
+    int favNum = 90;
+    char myChar = 'i';
+    printf("My favorite %s is %d\n","number", favNum);
+    printf("My favorite %c is %d\n",myChar, favNum);
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Working With Numbers - 45.23\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+
+
 
     printf(" \n");
     printf(" \n");
