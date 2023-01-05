@@ -60,6 +60,7 @@ int main()
     printf("Hello\nWorld\n");
     printf("Hello\"World\n");
     printf("%d\n", 500);
+    printf("My favorite number is %d\n", 500);
 
     printf(" \n");
     printf(" \n");
