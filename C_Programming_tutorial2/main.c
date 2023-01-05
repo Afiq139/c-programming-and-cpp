@@ -26,7 +26,12 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
+    printf("Roses are red\n");
+    printf("Violets are blue\n");
+    printf("I love you\n");
 
 
+    printf(" \n");
+    printf(" \n");
     return 0;
 }
