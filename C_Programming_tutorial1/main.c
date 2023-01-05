@@ -78,7 +78,14 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
-    printf("%f", 8.9);
+    printf("%f \n", 8.9);
+    printf("%f \n", 5.0 + 5.4);
+    printf("%d \n", 5 / 4);
+    printf("%f \n", 5 / 4.0);
+
+    int num = 6;
+    printf("%d \n",num);
+
 
 
 
