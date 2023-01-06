@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void sayHi(char name[], int age){
+printf("Hello %s, you are %d\n", name, age);
+}
 
 int main()
 {
@@ -53,6 +56,38 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
+    int luckyNumbers[] = {4, 8, 15, 16, 23, 42};
+    luckyNumbers[1] = 200;
+    printf("%d\n", luckyNumbers[0]);
+    printf("%d\n", luckyNumbers[3]);
+    printf("%d\n", luckyNumbers[1]);
+    printf("%d\n", luckyNumbers[2]);
+    printf(" \n");
+
+    int luckyNumbers1[10];
+    luckyNumbers1[1] = 80;
+    luckyNumbers1[0] = 90;
+    printf("%d\n", luckyNumbers1[0]);
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Functions - 1.36.45\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+    sayHi("Mike", 26);
+    sayHi("Tom", 40);
+    sayHi("Oscar", 17);
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Return Statement - 1.45.37\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
 
 
     printf(" \n");
@@ -60,3 +95,5 @@ int main()
 
     return 0;
 }
+
+
