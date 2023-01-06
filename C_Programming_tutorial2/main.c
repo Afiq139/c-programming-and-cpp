@@ -128,6 +128,13 @@ int main()
 
     printf("%d \n", max(4,10));
     printf("%d \n", max1(3, 2, 4));
+    /* other operators: ||, ==, != , >=, <=,and so on */
+
+    if (3 < 2 || 2 > 5){
+        printf("True");
+    }else {
+        printf("False");
+    }
 
 
     printf(" \n");
