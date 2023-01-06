@@ -8,6 +8,16 @@ printf("Hello %s, you are %d\n", name, age);
 
 double cube(double num); /* prototyping */
 
+int max(int numy1, int numy2){
+    int resulty;
+    if(numy1 > numy2 ){
+        resulty = numy1;
+    }else{
+        resulty = numy2;
+    }
+    return resulty;
+}
+
 int main()
 {
     printf("----------------------------------- \n");
@@ -102,7 +112,7 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
-
+    printf("%d \n", max(4,10));
 
 
     printf(" \n");
