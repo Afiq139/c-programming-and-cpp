@@ -18,6 +18,20 @@ int max(int numy1, int numy2){
     return resulty;
 }
 
+int max1(int numx1, int numx2, int numx3){
+    int resultx;
+
+    if(numx1 >= numx2 && numx1 >= numx3){
+        resultx = numx1;
+    }else if(numx2 >= numx1 && numx2 >= numx3){
+        resultx = numx2;
+    }else{
+        resultx = numx3;
+    }
+
+    return resultx;
+}
+
 int main()
 {
     printf("----------------------------------- \n");
@@ -113,6 +127,7 @@ int main()
     printf(" \n");
 
     printf("%d \n", max(4,10));
+    printf("%d \n", max1(3, 2, 4));
 
 
     printf(" \n");
