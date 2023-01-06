@@ -5,6 +5,11 @@ void sayHi(char name[], int age){
 printf("Hello %s, you are %d\n", name, age);
 }
 
+double cube(double mynum){
+    double result = mynum * mynum * mynum;
+    return result;
+}
+
 int main()
 {
     printf("----------------------------------- \n");
@@ -88,6 +93,8 @@ int main()
     printf("Return Statement - 1.45.37\n");
     printf("----------------------------------- \n");
     printf(" \n");
+
+    printf("Answer: %0.1f", cube(3.0));
 
 
     printf(" \n");
