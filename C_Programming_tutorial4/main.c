@@ -58,6 +58,33 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
+    /*FILE *fpointer = fopen("employees.txt", "w"); */
+   /* FILE *fpointer = fopen("employees.txt", "a");*/  /* any files can, such html, css and so on */
+    /* fprintf(fpointer,"Kelly, Customer Service"); */
+
+    /*fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting\n"); */
+    /*fprintf(fpointer,"Overridden");  */
+
+    /*fclose(fpointer); */
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Reading Files - 3:41:51\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+    char line[255];
+    FILE *fpointer = fopen("employees.txt", "r");
+
+    fgets(line, 255, fpointer);
+    fgets(line, 255, fpointer);
+    fgets(line, 255, fpointer);
+
+    printf("%s\n", line);
+    fclose(fpointer);
+
 
 
     printf(" \n");
