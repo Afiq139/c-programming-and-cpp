@@ -174,6 +174,21 @@ int main()
     printf("----------------------------------- \n");
     printf(" \n");
 
+    int nums[3][2] = {
+        {1, 2},
+        {3, 4},
+        {5, 6}
+        };
+        /* nums [0][0] = 1  also can */
+    printf("%d", nums[1][1]);
+
+    int i, j;
+    for(i = 0; i < 3; i++){
+        for(j=0; j< 2; j++){
+            printf("%d,", nums[i][j]);
+        }
+        printf("\n"); /* i,j = 0 -> will go to index of 0 */
+    }
 
 
     printf(" \n");
