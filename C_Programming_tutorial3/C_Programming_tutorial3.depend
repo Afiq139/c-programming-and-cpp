@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1673015937 source:c:\users\shafi\desktop\c-programming-and-cpp\c_programming_tutorial3\main.c
+1673079504 source:c:\users\shafi\desktop\c-programming-and-cpp\c_programming_tutorial3\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 

@@ -98,5 +98,55 @@ int main()
 
     printf(" \n");
     printf(" \n");
+    printf("----------------------------------- \n");
+    printf("While Loops - 2:29:45\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+    int index = 1;
+    while(index <= 5){
+        printf("%d \n", index);
+        index++;
+    }
+
+    do{
+        printf("%d \n", index);
+        index++;
+    }while(index <= 7);
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("Building a Guessing Game - 2:37:49\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+    int secretNumber = 5;
+    int guess;
+    int guessCount = 0;
+    int guessLimit = 3;
+    int outOfGuesses = 0;
+
+    while(guess != secretNumber && outOfGuesses == 0){
+        if(guessCount < guessLimit){
+            printf("Enter a number: ");
+            scanf("%d", &guess);
+            guessCount++;
+        }else {
+            outOfGuesses = 1;
+        }
+    }
+    if(outOfGuesses == 1){
+        printf("Out of guessses");
+    }else {
+        printf("You Win!");
+    }
+
+
+
+    printf(" \n");
+    printf(" \n");
+
     return 0;
 }
