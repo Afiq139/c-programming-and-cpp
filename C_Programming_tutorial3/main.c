@@ -147,6 +147,36 @@ int main()
 
     printf(" \n");
     printf(" \n");
+    printf("----------------------------------- \n");
+    printf("For Loops - 2:50:12\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
 
+    int x;
+    for(x = 1; x <= 5; x++){
+        printf("%d \n", x);
+    }
+    printf(" \n");
+
+    int luckyNumber[] = {4, 8, 15, 16, 23, 42};
+    int y;
+    for(y = 0; y < 6; y++){
+        printf("%d \n", luckyNumber[y]);
+    }
+
+
+
+
+    printf(" \n");
+    printf(" \n");
+    printf("----------------------------------- \n");
+    printf("2D Arrays & Nested Loops - 2:59:04\n");
+    printf("----------------------------------- \n");
+    printf(" \n");
+
+
+
+    printf(" \n");
+    printf(" \n");
     return 0;
 }
