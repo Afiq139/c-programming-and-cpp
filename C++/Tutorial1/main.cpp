@@ -128,6 +128,37 @@ int main()
     cout << "----------------------------" << endl;
     cout << "" << endl;
 
+    string name;
+    cout << "Enter your name: ";
+    getline(cin, name);
+    cout << "You are " << name << endl;
+
+    cout << "" << endl;
+
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+    cout << "You are " << age << " years old" << endl;
+
+    cout << "" << endl;
+
+    char age0;
+    cout << "Enter your age: ";
+    cin >> age0;
+    cout << "You are " << age0 << " years old" << endl;
+
+    cout << "" << endl;
+
+
+
+
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "----------------------------" << endl;
+    cout << "Building a Calculator --- 1:05:31" << endl;
+    cout << "----------------------------" << endl;
+    cout << "" << endl;
 
 
     cout << "" << endl;
