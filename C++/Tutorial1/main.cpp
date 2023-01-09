@@ -45,5 +45,9 @@ int main()
     cout << "Data Types --- 31.43" << endl;
     cout << "----------------------------" << endl;
     cout << "" << endl;
+
+
+    cout << "" << endl;
+    cout << "" << endl;
     return 0;
 }
