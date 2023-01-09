@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -92,6 +93,38 @@ int main()
 
     cout << "----------------------------" << endl;
     cout << "Working with Numbers --- 48.59" << endl;
+    cout << "----------------------------" << endl;
+    cout << "" << endl;
+
+    cout << -30.45 << endl;
+    cout << -30 << endl;
+    cout << 5 + 7 << endl;
+    cout << 10 % 7 << endl; /* getting remainders */
+    cout << 4 + 5 * 10 << endl;
+    cout << (4 + 5)* 10 << endl;
+
+    int wnum = 5;
+    double dnum = 5.5;
+
+    /*wnum++, wnum--,wnum += 80, wnum *=, wnum -=, wnum /= */
+
+    cout << wnum + dnum <<endl;
+
+    cout << 10/3 << endl;
+    cout << 10.0/3.0 << endl;
+
+    cout << pow(2, 5) << endl; /* fromm #include <cmath> */
+    cout << sqrt(36) << endl; /* fromm #include <cmath> */
+    cout << round(36.7) << endl; /* fromm #include <cmath> */
+    cout << ceil(36.1) << endl; /* fromm #include <cmath> */
+    cout << floor(36.8) << endl; /* fromm #include <cmath> */
+    cout << fmax(36, 8) << endl; /* telling which one is bigger, fromm #include <cmath> */
+    cout << fmin(36, 8) << endl; /* telling which one is smaller, fromm #include <cmath> */
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "----------------------------" << endl;
+    cout << "Getting User Input --- 59.41" << endl;
     cout << "----------------------------" << endl;
     cout << "" << endl;
 
