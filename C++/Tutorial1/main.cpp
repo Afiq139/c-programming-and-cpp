@@ -80,6 +80,21 @@ int main()
     cout << phrase1 << endl;;
 
     cout << phrase1.find("Engineering", 0); /* finding index position from 0 */
+    cout << "" << endl;
+    cout << phrase1.substr(8,3); /* start with 'i' will grab 3 characters */
+
+    cout << "" << endl;
+    string phrase2 = "My website is nice";
+    string phrase2sub;
+    phrase2sub = phrase2.substr(8, 3);
+    cout << phrase2sub;
+
+
+    cout << "----------------------------" << endl;
+    cout << "Working with Numbers --- 48.59" << endl;
+    cout << "----------------------------" << endl;
+    cout << "" << endl;
+
 
 
     cout << "" << endl;
