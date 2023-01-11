@@ -10,6 +10,13 @@ using namespace std;
 
 void sayHi(string name, int age); /*function's stop/signature   */
 
+double cube(double num){
+    double result = num * num * num;
+    return result;
+    /* return num * num * num; */
+
+}
+
 int main()
 {
 
@@ -79,6 +86,9 @@ int main()
     cout << "Return Statement --- 1.29.47 " << endl;
     cout << "----------------------------" << endl;
     cout << "" << endl;
+
+    double answer = cube(5.0);
+    cout << answer << endl;
 
 
 
