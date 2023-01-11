@@ -179,6 +179,15 @@ int main()
     cout << "----------------------------" << endl;
     cout << "" << endl;
 
+    cout << "Roses are red " << endl;
+    cout << "Violet are blue " << endl;
+    cout << "I love you " << endl;
+
+
+
+    cout << "" << endl;
+    cout << "" << endl;
+
 
     return 0;
 }
