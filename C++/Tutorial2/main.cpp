@@ -95,7 +95,34 @@ int main()
 
     cout << "" << endl;
     cout << "" << endl;
+    cout << "----------------------------" << endl;
+    cout << "If Statements --- 1.35.23 " << endl;
+    cout << "----------------------------" << endl;
+    cout << "" << endl;
 
+    bool isMale = true;
+    bool isTall = false;
+
+    if(isMale && isTall){
+        cout << "You are a tall male.";
+    } else if(isMale && !isTall){
+        cout << "You're a short male.";
+    } else if(!isMale && isTall){
+        cout << "You're tall but not male.";
+    } else {
+        cout << "You're not male and not tall.";
+    }
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "----------------------------" << endl;
+    cout << "More If Statements --- 1.47.15 " << endl;
+    cout << "----------------------------" << endl;
+    cout << "" << endl;
+
+
+    cout << "" << endl;
+    cout << "" << endl;
     return 0;
 }
 
