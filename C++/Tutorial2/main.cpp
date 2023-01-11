@@ -155,6 +155,40 @@ int main()
 
     cout << "" << endl;
     cout << "" << endl;
+    cout << "----------------------------" << endl;
+    cout << "Building a Better Calculator --- 1.55.58 " << endl;
+    cout << "----------------------------" << endl;
+    cout << "" << endl;
+
+    int numy1, numy2;
+    char op;
+
+    cout << "Enter first number: ";
+    cin >> numy1;
+    cout << "Enter operator: ";
+    cin >> op;
+    cout << "Enter second number: ";
+    cin >> numy2;
+
+    int resulty;
+
+    if(op == '+'){
+        resulty = numy1 + numy2;
+    }else if(op == '-'){
+        resulty = numy1 - numy2;
+    }else if(op == '/'){
+        resulty = numy1 / numy2;
+    }else if(op == '*'){
+        resulty = numy1 * numy2;
+    }else{
+        cout << "Invalid Operator\n";
+    }
+
+    cout << resulty;
+
+
+    cout << "" << endl;
+    cout << "" << endl;
     return 0;
 }
 
