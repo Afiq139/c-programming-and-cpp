@@ -10,6 +10,34 @@ using namespace std;
 
 void sayHi(string name, int age); /*function's stop/signature   */
 
+int getMax(int num1, int num2){
+    int result;
+
+    if(num1 > num2){
+        result = num1;
+    }else {
+        result = num2;
+    }
+
+    return result;
+    /* == -> for comparing if equal to, != -> not equal to */
+}
+
+int getMax1(int numx1, int numx2, int numx3){
+    int resultx;
+
+    if(numx1 >= numx2 && numx1 >= numx3){
+        resultx = numx1;
+    } else if(numx2 >= numx1 && numx2 >= numx3){
+        resultx = numx2;
+    } else {
+        resultx = numx3;
+    }
+
+    return resultx;
+
+}
+
 double cube(double num){
     double result = num * num * num;
     return result;
@@ -119,6 +147,10 @@ int main()
     cout << "More If Statements --- 1.47.15 " << endl;
     cout << "----------------------------" << endl;
     cout << "" << endl;
+
+    cout << getMax(2, 5);
+    cout << "" << endl;
+    cout << getMax1(200, 50, 10);
 
 
     cout << "" << endl;
