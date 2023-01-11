@@ -174,20 +174,5 @@ int main()
 
     cout << "" << endl;
     cout << "" << endl;
-    cout << "----------------------------" << endl;
-    cout << "Building a Mad Libs Game --- 1:09:27" << endl;
-    cout << "----------------------------" << endl;
-    cout << "" << endl;
-
-    cout << "Roses are red " << endl;
-    cout << "Violet are blue " << endl;
-    cout << "I love you " << endl;
-
-
-
-    cout << "" << endl;
-    cout << "" << endl;
-
-
     return 0;
 }
