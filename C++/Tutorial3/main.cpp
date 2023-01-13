@@ -2,6 +2,14 @@
 
 using namespace std;
 
+int power(int baseNum, int powNum){
+    int result = 1;
+    for(int i = 0; i < powNum; i++){
+        result = result * baseNum;
+    }
+    return result;
+}
+
 int main()
 {
     cout << "----------------------------" << endl;
@@ -74,6 +82,8 @@ int main()
     cout << "Exponent Function --- 2.39.32 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
+
+    cout << power(4, 2) << endl;
 
 
     cout << "" << endl;
