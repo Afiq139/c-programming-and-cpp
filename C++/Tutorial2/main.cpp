@@ -10,6 +10,39 @@ using namespace std;
 
 void sayHi(string name, int age); /*function's stop/signature   */
 
+string getDayOfWeek(int dayNum){
+    string dayName;
+
+    switch(dayNum){
+    case 0:
+        dayName = "Sunday";
+        break;
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    default:
+        dayName = "Invalid Number ";
+        break;
+
+    }
+
+}
+
 int getMax(int num1, int num2){
     int result;
 
@@ -193,6 +226,8 @@ int main()
     cout << "Switch Statements --- 2.02.21 " << endl;
     cout << "----------------------------" << endl;
     cout << "" << endl;
+
+
 
 
 
