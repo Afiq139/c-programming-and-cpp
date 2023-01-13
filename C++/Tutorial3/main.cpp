@@ -112,6 +112,57 @@ int main()
 
     cout << "" << endl;
     cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Comments --- 2.54.56 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
+    // comment in C++ , single line
+    /* multiple line */
+
+    cout << "Comments are fun" << endl; // output
+    //cout << "Comments are fun" << endl;
+
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Pointers --- 2.59.10 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
+    int age = 19;
+    int *pAge = &age; //pointer variables storing address
+    double gpa = 2.7;
+    double *pGpa = &gpa;//pointer variables storing address
+    string name = "Mike";
+    string *pName = &name; //pointer variables storing address
+
+    cout << "Pointer of Age:  "<< &age << endl; // accessing memory address
+    cout << "Pointer of GPA:  "<< &gpa << endl;
+    cout << "Pointer of Name: "<< &name << endl;
+    cout << endl;
+    cout << *pAge  << ":"<< pAge  << endl;
+    cout << *pGpa  << ":"<< pGpa  << endl;
+    cout << *pName << ":"<< pName << endl;
+
+    //deferencing pointers -- grab directly from physical memory address
+    // deferencing pointers: *pAge, *&Gpa, *&Name( can do &*&gpa)
+
+
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Classes & Objects --- 3.13.26 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
+
+
+    cout << "" << endl;
+    cout << "" << endl;
+
 
     return 0;
 }
