@@ -57,6 +57,24 @@ int main()
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
 
+    for(int i = 1; i <= 5; i++){
+        cout << i << endl;
+    }
+
+    cout << "" << endl;
+
+    int nums[] = {1, 2, 5, 7, 3};
+    for(int x = 0; x < 5; x++){
+        cout << nums[x] << endl;
+    }
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Exponent Function --- 2.39.32 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
 
     cout << "" << endl;
     cout << "" << endl;
