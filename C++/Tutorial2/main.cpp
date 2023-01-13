@@ -36,10 +36,11 @@ string getDayOfWeek(int dayNum){
         dayName = "Saturday";
         break;
     default:
-        dayName = "Invalid Number ";
-        break;
+        dayName = "Invalid Day Number ";
 
     }
+
+    return dayName;
 
 }
 
@@ -226,6 +227,11 @@ int main()
     cout << "Switch Statements --- 2.02.21 " << endl;
     cout << "----------------------------" << endl;
     cout << "" << endl;
+
+    cout << getDayOfWeek(0) << endl;
+    cout << getDayOfWeek(1) << endl;
+    cout << getDayOfWeek(9) << endl;
+    cout << getDayOfWeek(3) << endl;
 
 
 
