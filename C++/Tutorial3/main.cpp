@@ -9,6 +9,25 @@ int main()
     cout << "----------------------------" << endl;
     cout << "" << endl;
 
+    int index = 0;
+    do{
+        cout << index << endl;
+        index++;
+    }while(index <= 5);
+
+    /*while(index <= 5){
+        cout << index << endl;
+        index++;
+    }*/
+
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Building a Guessing Game --- 2.18.53 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
 
 
     cout << "" << endl;
