@@ -261,6 +261,13 @@ int main()
 
     cout << "" << endl;
     cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Getters & Setters --- 3.41.42 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
+    cout << "" << endl;
+    cout << "" << endl;
 
     return 0;
 }
