@@ -22,6 +22,27 @@ class Book {
        }
 };
 
+class student{
+    public:
+        string nameOne;
+        string majorOne;
+        double gpaOne;
+        student(string a1Name, string a1Major, double a1Gpa){
+            nameOne = a1Name;
+            majorOne = a1Major;
+            gpaOne =a1Gpa;
+       }
+
+        bool hasHonors(){
+            if(gpaOne >= 3.5){
+                return true;
+             }
+            return false;
+
+          }
+};
+
+
 int power(int baseNum, int powNum){
     int result = 1;
     for(int i = 0; i < powNum; i++){
@@ -224,5 +245,22 @@ int main()
     cout << "Object Functions --- 3.34.41 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
+
+    student student1("Jim", "Business", 2.4);
+    student student2("Pam", "Art", 3.6);
+
+    cout << student1.hasHonors() << endl;
+    cout << student2.hasHonors() << endl;
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Getters & Setters --- 3.41.42 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
+    cout << "" << endl;
+    cout << "" << endl;
+
     return 0;
 }
