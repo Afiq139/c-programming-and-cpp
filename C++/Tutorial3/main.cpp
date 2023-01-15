@@ -7,6 +7,19 @@ class Book {
        string title;  //atttributes
        string author;
        int pages;
+
+       Book(){
+            title = "no title";
+            author = "no author";
+            pages = 0;
+       }
+
+       Book(string aTitle, string aAuthor, int aPages){ //connstructor
+        //cout << aTitle << endl;
+        title = aTitle;
+        author = aAuthor;
+        pages = aPages;
+       }
 };
 
 int power(int baseNum, int powNum){
@@ -169,16 +182,16 @@ int main()
     //double pi = 3.14;
     //char favoriteLetter = 'G';
 
-    Book book1;
-    book1.title = "Harry Potter";
-    book1.author = "JK Rowling";
-    book1.pages = 500;
+    Book book1("nana", "Harry Potter", 500); //from constructor
+    //book1.title = "Harry Potter";
+    //book1.author = "JK Rowling";
+    //book1.pages = 500;
 
-    Book book2;
-    book2.title = "Lord of the Rings";
-    book2.author = "Tolkein";
-    book2.pages = 700;
-    book2.title = "Hunger Games";
+    Book book2("Harith", "Tolkein", 700); //from constructor
+    //book2.title = "Lord of the Rings";
+    //book2.author = "Tolkein";
+    //book2.pages = 700;
+    //book2.title = "Hunger Games";
 
     cout << book1.pages << endl;
     cout << book2.title << endl;
@@ -187,7 +200,25 @@ int main()
 
     cout << "" << endl;
     cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Constructor Functions --- 3.25.40 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
+    Book book3("Shafiq's book", "Hunger Games", 300);
+
+    cout << book3.title << endl;
+
+    book1.title = "Homes";
+
+    cout << book1.title << endl;
+
+    Book book4;
+
+    cout << book4.title;
 
 
+    cout << "" << endl;
+    cout << "" << endl;
     return 0;
 }
