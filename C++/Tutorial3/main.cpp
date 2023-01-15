@@ -2,6 +2,13 @@
 
 using namespace std;
 
+class Book {
+   public:
+       string title;  //atttributes
+       string author;
+       int pages;
+};
+
 int power(int baseNum, int powNum){
     int result = 1;
     for(int i = 0; i < powNum; i++){
@@ -157,6 +164,24 @@ int main()
     cout << "Classes & Objects --- 3.13.26 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
+
+    //string name1 = "Mike";
+    //double pi = 3.14;
+    //char favoriteLetter = 'G';
+
+    Book book1;
+    book1.title = "Harry Potter";
+    book1.author = "JK Rowling";
+    book1.pages = 500;
+
+    Book book2;
+    book2.title = "Lord of the Rings";
+    book2.author = "Tolkein";
+    book2.pages = 700;
+    book2.title = "Hunger Games";
+
+    cout << book1.pages << endl;
+    cout << book2.title << endl;
 
 
 
