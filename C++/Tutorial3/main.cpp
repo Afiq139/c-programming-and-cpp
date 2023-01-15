@@ -42,6 +42,28 @@ class student{
           }
 };
 
+class Movie{
+
+private:
+    string ratingTwo;
+
+
+public:
+    string titleTwo;
+    string directorTwo;
+    //string ratingTwo;
+    Movie(string aTitleTwo, string aDirectorTwo, string aRatingTwo){
+        titleTwo = aTitleTwo;
+        directorTwo = aDirectorTwo;
+        //ratingTwo = aRatingTwo;
+        setRating(aRatingTwo);
+    }
+    void setRating(string aRatingTwo){
+        ratingTwo = aRatingTwo;
+    }
+
+};
+
 
 int power(int baseNum, int powNum){
     int result = 1;
@@ -265,6 +287,14 @@ int main()
     cout << "Getters & Setters --- 3.41.42 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
+
+    Movie avengers("The Avengers", "Joss Whedon", "PG-13");
+
+    //avengers.ratingTwo = "Dog"; --- its in private, can't change
+
+    //cout << avengers.ratingTwo;  --- its in private, can't change
+
+    //tengok balik getter setter esok
 
     cout << "" << endl;
     cout << "" << endl;
