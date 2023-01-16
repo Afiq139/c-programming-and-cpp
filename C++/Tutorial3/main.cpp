@@ -91,6 +91,26 @@ int power(int baseNum, int powNum){
     return result;
 }
 
+
+//Inheritance
+class Chef{
+    public:
+        void makeChicken(){
+            cout << "The chef makes chicken" << endl;
+            }
+        void makeSalad(){
+            cout << "The chef makes salad" << endl;
+            }
+        void makeSpecialDish(){
+            cout << "The chef makes bbq ribs" << endl;
+
+            }
+};
+
+
+
+
+
 int main()
 {
     cout << "----------------------------" << endl;
@@ -315,6 +335,10 @@ int main()
     cout << "Inheritance --- 3.54.06 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
+
+    Chef chef;
+    chef.makeChicken();
+
 
 
     cout << "" << endl;
