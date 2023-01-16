@@ -281,13 +281,6 @@ int main()
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
 
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "-------------------------------------" << endl;
-    cout << "Getters & Setters --- 3.41.42 " << endl;
-    cout << "-------------------------------------" << endl;
-    cout << "" << endl;
-
     Movie avengers("The Avengers", "Joss Whedon", "PG-13");
 
     //avengers.ratingTwo = "Dog"; --- its in private, can't change
@@ -295,6 +288,14 @@ int main()
     //cout << avengers.ratingTwo;  --- its in private, can't change
 
     //tengok balik getter setter esok
+
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "Getters & Setters --- 3.41.42 " << endl;
+    cout << "-------------------------------------" << endl;
+    cout << "" << endl;
+
 
     cout << "" << endl;
     cout << "" << endl;
