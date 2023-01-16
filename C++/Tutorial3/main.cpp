@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+//constructor functions
 class Book {
    public:
        string title;  //atttributes
@@ -22,6 +24,7 @@ class Book {
        }
 };
 
+//object functions
 class student{
     public:
         string nameOne;
@@ -42,6 +45,7 @@ class student{
           }
 };
 
+// getter and setter
 class Movie{
 
 private: // can't be access outside of class but can work inside the class
