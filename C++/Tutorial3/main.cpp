@@ -92,11 +92,12 @@ int power(int baseNum, int powNum){
 }
 
 
-//Inheritance
+//Inheritance - 1
 class Chef{
+    //this is Super Class
     public:
         void makeChicken(){
-            cout << "The chef makes chicken" << endl;
+            cout << "The chef makes yummy chicken" << endl;
             }
         void makeSalad(){
             cout << "The chef makes salad" << endl;
@@ -105,6 +106,23 @@ class Chef{
             cout << "The chef makes bbq ribs" << endl;
 
             }
+};
+
+//Inheritance - 2
+class ItalianChef : public Chef{
+    // this is sub class
+    public:
+        void makePasta(){
+            cout << "The chef makes pasta" << endl;
+        }
+
+        //overriding function in chef class
+        void makeSpecialDish(){
+            cout << "The chef makes chicken parm" << endl;
+        }
+
+
+    //will inherit from chef class without any stuff in this class
 };
 
 
@@ -338,6 +356,14 @@ int main()
 
     Chef chef;
     chef.makeChicken();
+    chef.makeSpecialDish();
+    cout << "" << endl;
+
+    //inherit from Chef class
+    ItalianChef italianchef;
+    italianchef.makeChicken();
+    italianchef.makePasta();
+    italianchef.makeSpecialDish();
 
 
 
