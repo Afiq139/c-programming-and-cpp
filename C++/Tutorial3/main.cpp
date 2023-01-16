@@ -44,22 +44,36 @@ class student{
 
 class Movie{
 
-private:
+private: // can't be access outside of class but can work inside the class
     string ratingTwo;
 
 
-public:
+public: // can be access outside of class
     string titleTwo;
     string directorTwo;
     //string ratingTwo;
+    //constructor below
     Movie(string aTitleTwo, string aDirectorTwo, string aRatingTwo){
         titleTwo = aTitleTwo;
         directorTwo = aDirectorTwo;
         //ratingTwo = aRatingTwo;
         setRating(aRatingTwo);
     }
+
+    //setter
     void setRating(string aRatingTwo){
-        ratingTwo = aRatingTwo;
+        //ratingTwo = aRatingTwo;
+        if(aRatingTwo == "G" || aRatingTwo == "PG" || aRatingTwo == "PG-13" || aRatingTwo == "R" || aRatingTwo == "NR"){
+            ratingTwo = aRatingTwo;
+        } else {
+            ratingTwo = "NR";
+        }
+    }
+
+
+    //getter
+    string getRating(){
+        return ratingTwo;
     }
 
 };
@@ -280,19 +294,21 @@ int main()
     cout << "Getters & Setters --- 3.41.42 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
+    //control the access of different attributes and elements inside classes
 
-    Movie avengers("The Avengers", "Joss Whedon", "PG-13");
+    Movie avengers("The Avengers", "Joss Whedon", "PG-15");
+
+    cout << avengers.getRating();
 
     //avengers.ratingTwo = "Dog"; --- its in private, can't change
 
     //cout << avengers.ratingTwo;  --- its in private, can't change
 
-    //tengok balik getter setter esok
 
     cout << "" << endl;
     cout << "" << endl;
     cout << "-------------------------------------" << endl;
-    cout << "Getters & Setters --- 3.41.42 " << endl;
+    cout << "Inheritance --- 3.54.06 " << endl;
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
 
