@@ -264,7 +264,7 @@ int main()
     cout << "" << endl;
     cout << "" << endl;
     cout << "-------------------------------------" << endl;
-    cout << "Object Functions --- 3.34.41 " << endl;
+    cout << "Object Functions --- 3.34.41 " << endl; //or instance Functions
     cout << "-------------------------------------" << endl;
     cout << "" << endl;
 
