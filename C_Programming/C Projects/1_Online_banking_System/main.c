@@ -16,7 +16,7 @@ int main()
 {
     struct user usr;
     FILE *fp;
-    char filename[50];
+    char filename[50],phone[50], pword[50];
     int opt;
 
     printf("\nWhat do you want to do?");
@@ -43,7 +43,28 @@ int main()
         }else{
             printf("\n\nSomething went wrong please try again");
         }
+        fclose(fp);
     }
+
+    if(opt == 2){
+        system("cls");
+        printf("\nPhone number:\t");
+        scanf("%s", phone);
+        printf("password:\t");
+        scanf("%s",pword);
+        strcpy(filename,phone);
+        fp = fopen(strcat(filename, ".dat"),"r");
+        fread(&usr, sizeof(struct user), 1, fp);
+        fclose(fp);
+        if(!strcmp(pword,usr.password)){
+            printf("\nPassword matched");
+        }
+        else{
+            printf("\nInvalid password");
+        }
+    }
+
+
 
 
 
