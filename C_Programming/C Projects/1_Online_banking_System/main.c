@@ -15,6 +15,8 @@ struct user{
 int main()
 {
     struct user usr;
+    FILE *fp;
+    char filename[50];
     int opt;
 
     printf("\nWhat do you want to do?");
@@ -26,13 +28,21 @@ int main()
 
     if(opt == 1){
         system("cls"); //clear in linux or mac
-        printf("Enter your account no:\t");
+        printf("Enter your account number:\t");
         scanf("%s", usr.ac);
-        printf("\nEnter your phone no:\t");
+        printf("Enter your phone number:\t");
         scanf("%s", usr.phone);
-        printf("\nEnter your new password:\t");
+        printf("Enter your new password:\t");
         scanf("%s", usr.password);
         usr.balance = 0;
+        strcpy(filename,usr.phone);
+        fp = fopen(strcat(filename,".dat"),"w");
+        fwrite(&usr, sizeof(struct user), 1, fp);
+        if(fwrite != 0){
+            printf("\n\nAccount successfully registered");
+        }else{
+            printf("\n\nSomething went wrong please try again");
+        }
     }
 
 
