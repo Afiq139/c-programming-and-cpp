@@ -17,7 +17,7 @@ int main()
     struct user usr;
     FILE *fp;
     char filename[50],phone[50], pword[50];
-    int opt;
+    int opt, choice;
     char cont = 'y';
 
     printf("\nWhat do you want to do?");
@@ -65,11 +65,22 @@ int main()
         if(!strcmp(pword,usr.password)){
                 while(cont == 'y'){
                     system("cls");
-                    printf("\nPress 1 to check balance");
-                    printf("\nPress 2 to deposit an amount");
-                    printf("\nPress 3 to withdraw");
-                    printf("\nPress 4 to transfer the balance");
-                    printf("\nPress 5 to change the password");
+                    printf("\nPress 1 for balance inquiry");
+                    printf("\nPress 2 for deposit an amount");
+                    printf("\nPress 3 for cash withdrawal");
+                    printf("\nPress 4 for online transfer");
+                    printf("\nPress 5 for password change");
+                    printf("\n\nYour choice:\t");
+                    scanf("%d", &choice);
+
+                    switch(choice){
+                        case 1:
+                            printf("\nYour current balance is RM %.2f", usr.balance);
+
+
+
+
+                    }
 
                     printf("\nDo you want to continue the transaction [y/n]\t");
                     scanf("%s", &cont);
