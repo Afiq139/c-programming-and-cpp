@@ -86,9 +86,17 @@ int main()
                            fwrite(&usr, sizeof(struct user), 1, fp);
                            if(fwrite != NULL)printf("\nSuccessfully deposited.");
                            fclose(fp);
-
-
                            break;
+                        case 3:
+                           printf("\nEnter the amount:\t");
+                           scanf("%f", &amount);
+                           usr.balance -=amount;
+                           fp = fopen(filename, "w");
+                           fwrite(&usr, sizeof(struct user), 1, fp);
+                           if(fwrite != NULL)printf("\nYou have withdrawn RM %.2f", amount);
+                           fclose(fp);
+                           break;
+
 
 
 
