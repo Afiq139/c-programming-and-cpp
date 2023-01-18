@@ -117,7 +117,7 @@ int main()
                                     fp = fopen(strcat(filename,".dat"),"w");
                                     usr.balance -= amount;
                                     fwrite(&usr,sizeof(struct user), 1, fp);
-                                    fclose(fp);
+                                    fclose(fp);//36.43
                                 }
 
 
@@ -132,7 +132,7 @@ int main()
             //printf("\nPassword matched");
         }
         else{
-            printf("\nInvalid password"); //15.29
+            printf("\nInvalid password"); //36.43
         }
       }
     }
