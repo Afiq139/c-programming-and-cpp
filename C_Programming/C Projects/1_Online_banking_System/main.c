@@ -63,10 +63,12 @@ int main()
 
         fread(&usr, sizeof(struct user), 1, fp);
         fclose(fp);
+        system("cls");
         if(!strcmp(pword,usr.password)){
+            printf("\n\tWelcome %s", usr.phone);
                 while(cont == 'y'){
-                    system("cls");
-                    printf("\nPress 1 for balance inquiry");
+                    //system("cls");
+                    printf("\n\nPress 1 for balance inquiry");
                     printf("\nPress 2 for deposit an amount");
                     printf("\nPress 3 for cash withdrawal");
                     printf("\nPress 4 for online transfer");
@@ -101,12 +103,15 @@ int main()
                             scanf("%s", phone);
                             printf("\nPlease enter the amount to transfer:\t");
                             scanf("%f", &amount);
+                            strcpy(filename,phone);
+                            fp = fopen(strcat(filename, ".dat"), "r");
+                            if(fp == NULL) printf("\nAccount number not registered");
+                            else{
+                                     fread(&usr1,sizeof(struct user), 1, fp);
+
+                            fclose(fp);
                             if(amount > usr.balance)printf("\nInsufficient balance");
                             else{
-                                strcpy(filename,phone);
-                                fp = fopen(strcat(filename, ".dat"), "r");
-                                fread(&usr1,sizeof(struct user), 1, fp);
-                                fclose(fp);
                                 fp = fopen(filename, "w");
                                 usr1.balance +=amount;
                                 fwrite(&usr1,sizeof(struct user), 1, fp);
@@ -118,12 +123,25 @@ int main()
                                     usr.balance -= amount;
                                     fwrite(&usr,sizeof(struct user), 1, fp);
                                     fclose(fp);//36.43
-                                }
+                                    }
+                                  }
+                                break;
+                               }
+                         case 5:
+                             printf("\nPlease enter new password:\t");
+                             scanf("%s", pword);
+                             fp = fopen(filename, "w");
+                             strcpy(usr.password,pword);
+                             fwrite(&usr,sizeof(struct user), 1, fp);
+                             if(fwrite != NULL){
+                             printf("\nPassword successfully changed");
+                             }
+                             break;
 
+                         default:
+                             printf("\nInvalid option");
+                           }//inside switch
 
-                            }
-
-                    }
 
                     printf("\nDo you want to continue the transaction [y/n]\t");
                     scanf("%s", &cont);
