@@ -18,6 +18,7 @@ int main()
     FILE *fp;
     char filename[50],phone[50], pword[50];
     int opt;
+    char cont = 'y';
 
     printf("\nWhat do you want to do?");
     printf("\n\n1. Register an Account");
@@ -54,14 +55,32 @@ int main()
         scanf("%s",pword);
         strcpy(filename,phone);
         fp = fopen(strcat(filename, ".dat"),"r");
+        if(fp == NULL){
+            printf("\nAccount number not registered");
+        }
+        else{
+
         fread(&usr, sizeof(struct user), 1, fp);
         fclose(fp);
         if(!strcmp(pword,usr.password)){
-            printf("\nPassword matched");
+                while(cont == 'y'){
+                    system("cls");
+                    printf("\nPress 1 to check balance");
+                    printf("\nPress 2 to deposit an amount");
+                    printf("\nPress 3 to withdraw");
+                    printf("\nPress 4 to transfer the balance");
+                    printf("\nPress 5 to change the password");
+
+                    printf("\nDo you want to continue the transaction [y/n]\t");
+                    scanf("%s", &cont);
+                }
+
+            //printf("\nPassword matched");
         }
         else{
             printf("\nInvalid password"); //15.29
         }
+      }
     }
 
 
