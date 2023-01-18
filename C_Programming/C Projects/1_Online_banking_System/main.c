@@ -63,11 +63,10 @@ int main()
 
         fread(&usr, sizeof(struct user), 1, fp);
         fclose(fp);
-        system("cls");
         if(!strcmp(pword,usr.password)){
-            printf("\n\tWelcome %s", usr.phone);
                 while(cont == 'y'){
-                    //system("cls");
+                    system("cls");
+                    printf("\n\tWelcome %s", usr.phone);
                     printf("\n\nPress 1 for balance inquiry");
                     printf("\nPress 2 for deposit an amount");
                     printf("\nPress 3 for cash withdrawal");
@@ -125,8 +124,8 @@ int main()
                                     fclose(fp);//36.43
                                     }
                                   }
-                                break;
                                }
+                               break;
                          case 5:
                              printf("\nPlease enter new password:\t");
                              scanf("%s", pword);
